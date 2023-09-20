@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="text-center">
+    <h1><%= @post.header %></h1>
+    <p><%= @post.body %></p>
+  </div>
+  <%= link_to "◀", posts_path, class:"btn" %>
+  <%= link_to "Edit", edit_post_path %>
+</div>

@@ -1,0 +1,7 @@
+<h1>Form new thought</h1>
+
+<%= simple_form_for @post do |f| %>
+<%= f.input :header, placeholder:"New idea came to my mind" %>
+<%= f.input :body, placeholder: "Spit it out" %>
+<%= f.submit class:"btn btn-dark" %>
+<% end %>

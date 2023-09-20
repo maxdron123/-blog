@@ -1,0 +1,7 @@
+<h1>Edit post</h1>
+
+<%= simple_form_for @post do |f| %>
+<%= f.input :header %>
+<%= f.input :body%>
+<%= f.submit class:"btn btn-dark" %>
+<% end %>
