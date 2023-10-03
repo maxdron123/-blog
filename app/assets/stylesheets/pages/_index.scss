@@ -1,2 +1,25 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.view-btn {
+  background-color: brown;
+  width:fit-content;
+
+}
+
+.sidebar-left {
+  margin-left: -80px;
+}
+
+.content {
+  margin-left: 25px;
+}
+
+// .sidebar-right {
+//   position:absolute;
+//   right: 0px;
+// }
+
+.post {
+  border-bottom: 2px solid black;
+}

@@ -1,7 +1,10 @@
-<h1>Form new thought</h1>
-
-<%= simple_form_for @post do |f| %>
-<%= f.input :header, placeholder:"New idea came to my mind" %>
-<%= f.input :body, placeholder: "Spit it out" %>
-<%= f.submit class:"btn btn-dark" %>
-<% end %>
+<div class="container d-flex flex-column align-items-center mb-3">
+  <h1>Form new thought</h1>
+  <div class="form w-75">
+    <%= simple_form_for @post do |f| %>
+    <%= f.input :header, placeholder:"New idea came to my mind"%>
+    <%= f.input :body, placeholder: "Spit it out", input_html: { class: 'body-form' } %>
+    <%= f.submit class:"btn btn-dark" %>
+    <% end %>
+  </div>
+</div>

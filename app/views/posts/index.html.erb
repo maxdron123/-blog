@@ -1,9 +1,29 @@
-<h1>My confessions</h1>
-<% @posts.each do |post| %>
-<div class="card">
-  <h3><%= post.header %></h3>
-  <p><%= post.body %></p>
-  <%= link_to "View full", post_path(post), class:"btn text-decoration-none" %>
-<% end %>
+<div class="container">
+  <div class="main">
+    <div class="row position-relative">
+      <div class="sidebar-left col-2">
+        <h3>Feed</h3>
+        <div class="card">
+        </div>
+      </div>
+      <div class="content col-8">
+        <h1 class="text-center">My thoghts</h1>
+        <%= link_to "New post", new_post_path %>
+        <div class="card d-flex">
+          <% @posts.each do |post| %>
+          <div class="post">
+            <h3 class="text-center"><%= post.header %></h3>
+            <p><%= post.body %></p>
+            <%= link_to "View full", post_path(post), class:"btn view-btn text-decoration-none" %>
+          </div>
+            <% end %> <br>
+      </div>
+    </div>
+      <div class="sidebar-right col-2 text-end">
+        <h3>Recent stories</h3>
+        <div class="recent">
+          <p>another story</p>
+        </div>
+      </div>
+  </div>
 </div>
-<%= link_to "New post", new_post_path %>

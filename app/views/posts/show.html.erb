@@ -5,4 +5,5 @@
   </div>
   <%= link_to "◀", posts_path, class:"btn" %>
   <%= link_to "Edit", edit_post_path %>
+  <%= link_to "Erase", post_path(@post), data: { turbo_method: :delete, turbo_confirm: "Delete post?" } %>
 </div>
